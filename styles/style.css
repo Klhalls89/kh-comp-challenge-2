@@ -1,0 +1,174 @@
+body{
+   font-family: 'Open Sans', sans-serif;
+   color: #2b2b2b;
+   margin: 0;
+}
+header {
+  background-color: #2b2b2b;
+  max-width: 100%;
+  position: relative;
+}
+
+header,
+.header-section-1,
+.header-section-2 {
+  height: 192px;
+}
+
+.header-section-1 {
+  align-items: flex-end;
+  width: 400px;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  margin-left: 10px;
+}
+
+.sect article{
+  margin-left: 10px;
+}
+
+.header-section-1,
+.sect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.header-section-2{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  position: absolute;
+  right: 10px;
+  justify-content: space-between;
+  text-align: right;
+  top: 10px;
+}
+
+
+
+.shares,
+.playlists, 
+.personal-videos, 
+.admin-username {
+  font-size: 1em;
+  color: #979797;
+  text-transform: uppercase;
+}
+
+.shares:hover,
+.playlists:hover, 
+.personal-videos:hover, 
+.admin-username :hover {
+  color: #fff;
+}
+
+.admin-username {
+  color: #55b5f5;
+}
+
+.admin-username:hover {
+  color: #fff;
+}
+
+.fas, 
+.far {
+  color: #55b5f5
+}
+
+.fas:hover, 
+.far:hover {
+  color: #fff
+}
+
+.fa-user-circle {
+  color: #979797
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.logo {
+  height: 75px;
+  width: 225px;
+  background-size: contain;
+  background-image: url(../assets/eldr-scrl.jpg);
+}
+
+h1 {
+  padding-left: 10px;
+
+}
+
+
+main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 475px);
+  padding: 0 2%;
+  grid-gap: 1%;
+}
+
+.fa-arrow-alt-circle-right {
+  color: #fff;
+  font-size: 4em;
+}
+
+.num{
+  font-size: 2.5em;
+}
+
+.image-div {
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0 1%;
+}
+
+.image-article {
+  background-image: url(../assets/lady1.jpg);
+  background-size: cover;
+  color: #fff;
+  height: 33%;
+}
+
+.name-date {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.link{
+  background-color: lightgrey;
+}
+
+@media(max-width: 750px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 475px);
+}
+.header-section-1{
+width: 100%
+}
+
+.personal-videos{
+  margin: 0;
+}
+
+.header-section-2 {
+position: relative;
+}
+
+.logo {
+position: absolute;
+top: 5px ;
+left: 5px;
+}
+
+
